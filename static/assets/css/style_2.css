@@ -1,0 +1,12 @@
+#soz {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.oval {
+  width: 160px;
+  height: 80px;
+  background: #a84909;
+  border-radius: 50%;
+}

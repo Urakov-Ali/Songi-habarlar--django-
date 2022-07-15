@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="content-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card aos-init aos-animate" data-aos="fade-up">
+          <div class="card-body">
+            <div class="aboutus-wrapper">
+              <h1 class="mt-5">
+                {{news.Title}}
+              </h1>
+              <hr>
+              <br>
+              
+              <h4><em>{{news.Text|linebreaks}}</em></h4>
+              <p></p>
+              <br>
+              <img src="{{news.Image.url}}" alt="banner" class="img-fluid mb-5">
+
+              <p class="font-weight-600 fs-15 text-center">
+                Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
+              </p>
+              <br>
+              <p class="font-weight-600 fs-15 mb-5 mt-4 text-center">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              </p>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+
+<br>
+
+
+{% endblock content %}
