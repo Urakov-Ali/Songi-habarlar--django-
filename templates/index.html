@@ -227,7 +227,7 @@
           {% if 8 <= forloop.counter0 and 13 > forloop.counter0 %}
           <a href="{{product.get_absolute_url}}">
             <div
-            class="d-flex justify-content-between align-items-center border-bottom pb-2" style="margin-top: 35px;">\
+            class="d-flex justify-content-between align-items-center border-bottom pb-2" style="margin-top: 35px;">
             <div class="div-w-80 mr-3" style="border-radius: 50%;">
               <div class="rotate-img">
                 <img
@@ -237,8 +237,8 @@
                 />
               </div>
             </div>
-            <h3 class="font-weight-600 mb-0" style="color: black;">
-               {{product.Title|truncatewords:3}} 
+            <h3 class="font-weight-600 mb-0" style="color: black;"> 
+              {{product.Title|truncatewords:3}} 
             </h3>
           </div>
         </a>
@@ -257,20 +257,22 @@
         <div class="row">
           <div class="col-xl-6">
             <div class="card-title">
+              <a href="{% url 'cat_view' cat_id=5 %}" style="color: black;">
               Sport yangiliklari
             </div>
             <div class="row">
               <div class="col-xl-6 col-lg-8 col-sm-6">
                 <div class="rotate-img">
+                  
                   <img
                   src="{% static 'images/sport.jpg' %}"
                   alt="thumb"
                   class="img-fluid"
-                  />
+                  /> 
                 </div>
                 <h2 class="mt-3 text-primary mb-2">
                   Sport sohasidagi yangiliklar...
-                </h2>
+                </h2></a>
                 <p class="fs-13 mb-1 text-muted">
                   <span class="mr-2">Photo </span>10 Minutes ago
                 </p>
@@ -279,7 +281,7 @@
                   text ever since the 1500s, when an unknown printer
                   took
                 </p>
-                <a href="#" class="font-weight-600 fs-16 text-dark"
+                <a href="{% url 'cat_view' cat_id=5 %}" class="font-weight-600 fs-16 text-dark"
                 >Ko'proq o'qish</a
                 >
               </div>
@@ -309,7 +311,8 @@
               <div class="row">
                 <div class="col-sm-6">
                   <div class="card-title">
-                    Siyosiy habarlar
+                    <a href="{% url 'cat_view' cat_id=2 %}" style="color: black;">
+                    Jahon habarlar</a>
                   </div>
                   {% for product in object_list %}
                   {% if 18 <= forloop.counter0 and 20 > forloop.counter0 %}
@@ -335,7 +338,8 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="card-title">
-                      Sotsial habarlar
+                      <a href="{% url 'cat_view' cat_id=3 %}" style="color: black;">
+                      Iqtisod yangiliklari</a>
                     </div>
                     <div class="row">
                       {% for product in object_list %}
