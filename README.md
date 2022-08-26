@@ -1,8 +1,9 @@
-# So'ngi habrlar [django]
+# Breaking_news_site_on_django
 
-• Website SQLite baza strukturasida ishlaydi.
-• Website 2 ta modellarni o'z ichiga oladi:
-1: Katigoriyalar uchun /2: Yangiliklar-sahifasi uchun.
+• Website works on PostgreSQL database structure.
+• The website has 2 models
+1: For categories /2: For news_page
 
-• Web Site da 6ta kategoriya mavjud:
-Malum bir kategoriya ustiga bosilganda aynan shu kategoryaga ostidagi sahifalar ekranga chiqadi. 
+• There are 6 catigories on the Web Site
+When specefic category button is pressed individual pages will be shown on page depending on chosen
+category.
